@@ -70,6 +70,7 @@ function atualizarResultado() {
         simbolos.forEach((simbolo, index) => {
             simbolo.src = "src/img/slot.jpg";
             botaoJogar.style.display = 'block';
+            resultadoElement.textContent = "";
         });
 
         
