@@ -69,20 +69,21 @@ function atualizarResultado() {
         // Restaure os placeholders após 500ms
         simbolos.forEach((simbolo, index) => {
             simbolo.src = "src/img/slot.jpg";
+            botaoJogar.style.display = 'block';
         });
 
         
-    }, 5000);
+    }, 3500);
 }
 
 
 // Função para iniciar o jogo
 function jogar() {
-    botaoJogar.disabled = true; // Desabilite o botão durante a animação
+    botaoJogar.style.display = 'none';
     resultadoElement.textContent = "Rodando...";
 
     setTimeout(() => {
         atualizarResultado();
-        botaoJogar.disabled = false; // Reabilite o botão após a animação
-    }, 500); // A animação dura 3 segundos
+        
+    }, 500);
 }

@@ -47,6 +47,8 @@ button {
     font-weight: bold;
     cursor: pointer;
     border-radius: 10px;
+    margin-bottom: 20px;
+    margin: 0 auto;
 }
 
 #resultado {
