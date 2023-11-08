@@ -30,7 +30,6 @@ function girarCacaNiquel() {
 function atualizarResultado() {
     const simbolos = document.querySelectorAll('.simbolo');
     const resultadoGirado = girarCacaNiquel();
-    //resultadoElement.textContent = `${resultadoGirado}`;
 
     // Mapeie os resultados para as imagens correspondentes
     const imagens = resultadoGirado.map((simbolo, index) => {
@@ -84,7 +83,7 @@ function jogar() {
     resultadoElement.textContent = "Rodando...";
 
     setTimeout(() => {
-        atualizarResultado();
+    atualizarResultado();
         
     }, 500);
 }
